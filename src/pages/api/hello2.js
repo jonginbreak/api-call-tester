@@ -6,6 +6,7 @@ export default function handler(req, res) {
   if(req.method !== 'POST'){
     return res.status(200).json({ok:'oadsfsdfk'})
   }
+  console.log('frontend return callback',new Date())
   console.log('url',req.url);
   console.log('body',req.body);
   res.status(200).json({ name: 'hello2 Doe' })
